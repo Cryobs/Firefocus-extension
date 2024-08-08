@@ -1,6 +1,6 @@
 # Firefocus
 
-![Firefocus Logo](https://github.com/Cryobs/Firefocus-extension/raw/main/public/icons/firefocus-logo-128.png)
+![Firefocus Logo](https://github.com/Cryobs/Firefocus-extension/raw/main/public/icons/firefocus-logo.png)
 
 **Firefocus** is a Pomodoro timer extension for Firefox that helps you manage your tasks and time effectively. Inspired by the vibrant colors of the Firefox brand, Firefocus combines productivity and style in a seamless browsing experience.
 

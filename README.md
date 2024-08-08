@@ -30,7 +30,6 @@ Ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (which includes npm)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-- [less](https://lesscss.org/)
 
 ### Development Setup
 

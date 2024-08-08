@@ -18,9 +18,6 @@ module.exports = {
       ecmaVersion: 2021,
       sourceType: "module",
     },
-    plugins: ["react"],
-    rules: {
-      // Ваши правила ESLint
-    },
+    plugins: ["react"]
   };
   

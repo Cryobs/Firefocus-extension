@@ -1,0 +1,1414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.App.ShortBreak{
+  background: linear-gradient(180deg, #317AE1 11%, #BC3FE1 100%);
+  & .Menu-container{
+    & .Menu {
+      & .Menu-doneIcon *{
+        stroke: #0547A4;
+      }
+  
+      & .Menu-delIcon *{
+        stroke: #0547A4;
+      }
+
+      & .choice{
+        text-shadow: 5px 5px 4px #4183E0 , 0px 0px 0px #0547A4;
+        &:hover{
+          text-shadow: 5px 5px 4px #6498e1 , 0px 0px 0px #0547A4;
+        }
+  
+        &:active{
+          text-shadow: 5px 5px 4px #4183E0 , 0px 0px 0px #0547A4;
+        }
+      }
+      & .Menu-Settings{
+        & .Settings-svg *{
+          stroke: #0547A4;
+        }
+      }
+    }
+  }
+
+  & .Header{
+    & .Ext-name{
+      text-shadow: 5px 5px 4px #4183E0 , 0px 0px 0px #0547A4;
+    }
+    & .MenuBtn-container {
+      & .MenuBtn {
+        & span {
+          background-color: #4183E0;
+          box-shadow: inset 2px 2px 2px #0547A4;
+        } 
+        &.active {
+          & .MenuBtn-line1 {
+            box-shadow: inset 0 2px 2px #0547A4;
+          }
+          & .MenuBtn-line3 {
+            box-shadow: inset 2px 0 2px #0547A4;
+          }
+        }
+      }
+    }
+  }
+
+  & .ContentArea {
+    & .content {
+      & .content-default {
+        & .PeriodTimer{
+          text-shadow: 5px 5px 4px #517CE0, 0px 0px 0px #0F3EA0;
+        }
+        & .Timer{
+          text-shadow: 5px 5px 2px #5A77DF, 0px 0px 0px #1A3AA1;
+        }
+        & .TimerButton{
+          text-shadow: 2px 2px 2px #7F76DF, 0px 0px 0px #251E86;
+        }
+        & .TimerStats {
+          & .cycle{
+            text-shadow: 2px 2px 2px #8068E0, 0px 0px 0px #402AA1;
+          }
+          & .allTime{
+            text-shadow: 2px 2px 2px #8665E0, 0px 0px 0px #4527A1;
+          }
+        }
+        & .TaskManager-container {
+          & .header {
+            border-bottom: 2px solid #4527A1;
+            text-shadow: 2px 2px 2px #8D63E0, 0px 0px 0px #2B0380;
+            & .refreshIcon-container{
+              & path {
+                fill:#350994;
+              }
+            }
+            & .addBtn {
+              border: solid 2px #350994;
+              &:hover {
+                border: solid 2px #6c3ed1;
+      
+                & span {
+                  background: #6c3ed1;
+                }
+              }
+      
+              &:active {
+                border: solid 2px #350994;
+      
+                & span {
+                  background: #350994;
+                }
+              }
+  
+              & span{
+                background: #350994;
+              }
+              
+            }
+          }
+
+          & .TaskMenu-container{
+            color: #7343b2;
+            & input{
+              color: #7343b2;
+
+              &::placeholder{
+                color: #7343b2;
+              }
+            }
+            & p {
+              color: #7343b2
+            }
+            & .Counter-container {
+
+              & .Counter{
+                background-color: #A477D7;
+                color: #7343b2
+              }
+              & path {
+                fill: #5B3099;
+                stroke: #5B3099;
+              }
+              & .PlusBtn {
+                background-color: #A477D7;
+              }
+              & .MinusBtn {
+                background-color: #A477D7;
+              }
+            }
+            & footer {
+              color: #7343b2
+            }
+          }
+  
+          & .TaskText{
+            text-shadow: 2px 2px 2px #9E6ADF, 0px 0px 0px #59269B;
+          }
+    
+          & .doneIcon{
+            border: solid 2px #58259A;
+            & span{
+              background-color: #58259A;
+            }
+          }
+    
+          & .progressText-container {
+            border-left: solid 2px #58259A;
+            & .progressText {
+              text-shadow: 2px 2px 2px #9E6ADF, 0px 0px 0px #5D2A9F;
+            }
+          }
+    
+          & .AddTask-container {
+            text-shadow: 2px 2px 2px #AC65E0, 0px 0px 0px #6A259F;
+            &:hover {
+              text-shadow: 2px 2px 2px #b67ae0,s 0px 0px 0px #6A259F;
+            }
+            &:active {
+              text-shadow: 2px 2px 2px #AC65E0, 0px 0px 0px #6A259F;
+            }
+            & .addBtn {
+              border: solid 2px #6A259F;
+    
+              & span {
+                background-color: #6A259F;
+              }
+            }
+    
+          }
+        }
+      }
+      & .Settings-container{
+        & h1{
+          text-shadow: 2px 2px 2px #5579DF, 0px 0px 0px #133BA0;
+        }
+  
+        & .Settings-form{
+          & h2{
+            text-shadow: 2px 2px 2px #6076E0, 0px 0px 0px #3750BA;
+          }
+          & h3{
+            text-shadow: 2px 2px 2px #6A72E0, 0px 0px 0px #071380;
+          }
+          & label:not(.toggle-checkbox){
+            text-shadow: 2px 2px 2px #7070E0, 0px 0px 0px #3C40AF;
+          }
+
+          & .Settings-checkbox:checked + .toggle-container{
+            background-color: #BB40E0;
+          }
+
+          & .LongBreak-interval {
+            border-bottom: 2px solid #4A0F91;
+          }
+          & .counter{
+            & input{
+              color: #4038A0
+            }
+          }
+          & footer {
+            & .CancelBtn{
+              color: #4038A0;
+            }
+    
+            & .SaveBtn{
+              color: #4038A0;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+
+}
+
+.App.LongBreak{
+  background: linear-gradient(180deg, #2E164F 11%, #7F47D6 100%);
+
+  & .glass {
+    background: rgba(200, 200, 200, 0.1);
+    border: 3px solid rgba(200, 200, 200, 0.2);
+  }
+
+  & .Menu-container{
+    & .Menu {
+      & .Menu-doneIcon *{
+        stroke: #00001C;
+      }
+  
+      & .Menu-delIcon *{
+        stroke: #00001C;
+      }
+
+      & .choice{
+        text-shadow: 5px 5px 4px #4E386C , 0px 0px 0px #00001C;
+        &:hover{
+          text-shadow: 5px 5px 4px #4E386C , 0px 0px 0px #00001C;
+        }
+  
+        &:active{
+          text-shadow: 5px 5px 4px #4E386C , 0px 0px 0px #00001C;
+        }
+      }
+      & .Menu-Settings{
+        & .Settings-svg *{
+          stroke: #00001C;
+        }
+      }
+    }
+  }
+
+  & .Header{
+    & .Ext-name{
+      text-shadow: 5px 5px 4px #3E295C , 0px 0px 0px #00001C;
+    }
+    & .MenuBtn-container {
+      & .MenuBtn {
+        & span {
+          background-color: #000014;
+          box-shadow: inset 2px 2px 2px #170235;
+        } 
+        &.active {
+          & .MenuBtn-line1 {
+            box-shadow: inset 0 2px 2px #170235;
+          }
+          & .MenuBtn-line3 {
+            box-shadow: inset 2px 0 2px #170235;
+          }
+        }
+      }
+    }
+  }
+
+  & .ContentArea {
+    & .content {
+      & .content-default {
+        & .PeriodTimer{
+          text-shadow: 5px 5px 4px #462D69, 0px 0px 0px #050027;
+        }
+        & .Timer{
+          text-shadow: 5px 5px 2px #51347A, 0px 0px 0px #0A0030;
+        }
+        & .TimerButton{
+          text-shadow: 2px 2px 2px #684A96, 0px 0px 0px #0C0039;
+        }
+        & .TimerStats {
+          & .cycle{
+            text-shadow: 2px 2px 2px #633E9A, 0px 0px 0px #240059;
+          }
+          & .allTime{
+            text-shadow: 2px 2px 2px #66409E, 0px 0px 0px #25005C;
+          }
+        }
+        & .TaskManager-container {
+          & .header {
+            border-bottom: 2px solid #090044;
+            text-shadow: 2px 2px 2px #6B43A5, 0px 0px 0px #090044;
+            & .refreshIcon-container{
+              & path {
+                fill:#14004E;
+              }
+            }
+            & .addBtn {
+              border: solid 2px #14004E;
+              &:hover {
+                border: solid 2px #1c0b4e;
+      
+                & span {
+                  background: #1c0b4e;
+                }
+              }
+      
+              &:active {
+                border: solid 2px #14004E;
+      
+                & span {
+                  background: #14004E;
+                }
+              }
+
+              & span{
+                background: #14004E;
+              }
+            }
+          }
+
+          & .TaskMenu-container{
+            color: #14004E;
+            & input{
+              color: #14004E;
+
+              &::placeholder{
+                color: #14004E;
+              }
+            }
+            & p {
+              color: #14004E;
+            }
+            & .Counter-container {
+
+              & .Counter{
+                background-color: #8D6DBD;
+                color: #14004E;
+              }
+              & path {
+                fill: #14004E;
+                stroke: #14004E;
+              }
+              & .PlusBtn {
+                background-color: #8D6DBD;
+              }
+              & .MinusBtn {
+                background-color: #8D6DBD;
+              }
+            }
+            & footer {
+              color: #14004E;
+            }
+          }
+
+          & .TaskText{
+            text-shadow: 2px 2px 2px #7A55B3, 0px 0px 0px #3A1573;
+          }
+    
+          & .doneIcon{
+            border: solid 2px #3A1573;
+            & span{
+              background-color: #3A1573;
+            }
+          }
+    
+          & .progressText-container {
+            border-left: solid 2px #3A1573;
+            & .progressText {
+              text-shadow: 2px 2px 2px #7A55B3, 0px 0px 0px #391472;
+            }
+          }
+    
+          & .AddTask-container {
+            text-shadow: 2px 2px 2px #8059BF, 0px 0px 0px #41197F;
+            &:hover {
+              text-shadow: 2px 2px 2px #8b6dbd, 0px 0px 0px #492580;
+            }
+            &:active {
+              text-shadow: 2px 2px 2px #8059BF, 0px 0px 0px #41197F;
+            }
+            & .addBtn {
+              border: solid 2px #41197E;
+    
+              & span {
+                background-color: #41197E;
+              }
+            }
+    
+          }
+        }
+      }
+      & .Settings-container{
+        & h1{
+          text-shadow: 2px 2px 2px #4A3070, 0px 0px 0px #08002C;
+        }
+  
+        & .Settings-form{
+          & h2{
+            text-shadow: 2px 2px 2px #503379, 0px 0px 0px #280C50;
+          }
+          & h3{
+            text-shadow: 2px 2px 2px #543681, 0px 0px 0px #0A0036;
+          }
+          & label:not(.toggle-checkbox){
+            text-shadow: 2px 2px 2px #593887, 0px 0px 0px #270756;
+          }
+
+          & .Settings-checkbox:checked + .toggle-container{
+            background-color: #7D46D1;
+          }
+
+          & .LongBreak-interval {
+            border-bottom: 2px solid #210060;
+          }
+          & .counter{
+            & input{
+              color: #38146E;
+            }
+          }
+          & footer {
+            & .CancelBtn{
+              color: #38146E;
+            }
+    
+            & .SaveBtn{
+              color: #38146E;
+            }
+          }
+        }
+      }
+    
+  }
+  }
+
+
+}
+
+.App {
+  position: relative;
+  width: 400px;
+  height: 600px;
+
+  background: linear-gradient(180deg, #F12E50 11%, #FE7738 100%);
+}
+
+
+.Header {
+  position: relative;
+
+  box-sizing: border-box;
+
+  width: 400px;
+  height: 66px;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  padding: 0 20px;
+
+  & .Ext-name {
+
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  
+    user-select: none;
+  
+    mix-blend-mode: plus-darker;
+    color: rgba(0, 0, 0, 0.1);
+  
+    text-shadow: 5px 5px 4px #F12E50, 0px 0px 0px #c20e2c;
+  }
+
+  & .MenuBtn-container {
+    display: flex;
+    justify-content: end;
+  
+    & .MenuBtn {
+      position: relative;
+      bottom: 2px;
+      height: 24px;
+      width: 24px;
+      z-index: 10;
+    
+      cursor: pointer;
+      & span {
+        position: absolute;
+        content: "";
+        background-color: #F24362;
+        width: 24px;
+        height: 4px;
+        border-radius: 5px;
+        right: 0px;
+    
+    
+        box-shadow: inset 2px 2px 2px #8a0a1f;
+        transition: opacity 0.2s ease, top 0.2s ease, rotate 0.2s ease, box-shadow 0.2s ease;
+      }
+    
+      & .MenuBtn-line1{
+        top: 20%;
+      }
+      & .MenuBtn-line2{
+        top: 50%;
+      }
+      & .MenuBtn-line3{
+        top: 80%;
+      }
+  
+      &.active {
+        & .MenuBtn-line1 {
+          top: 50%;
+          rotate: -45deg;
+          box-shadow: inset 0 2px 2px #8a0a1f;
+          z-index: 10;
+        }
+        & .MenuBtn-line2 {
+          opacity: 0;
+        }
+        & .MenuBtn-line3 {
+          top: 50%;
+          rotate: 45deg;
+          box-shadow: inset 2px 0 2px #8a0a1f;
+          z-index: 11;
+        }
+      }
+    }
+    
+  }
+}
+
+
+
+.ContentArea {
+  display: grid;
+  width: 100%;
+  height: 534px;
+
+  justify-items: center;
+  padding: 25px 40px;
+
+  & .content {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    & .content-default{
+      display: none;
+    }
+    & .content-default.active{
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      padding: 20px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      
+      & .PeriodTimer {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: rgba(0, 0, 0, 0.1);
+  
+        user-select: none;
+  
+        text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #c20e2c;
+      }
+  
+      & .Timer {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 85px;
+        color: rgba(0, 0, 0, 0.1);
+        text-align: center;
+  
+        width: 229.383px;
+        height: 85px;
+  
+        user-select: none;
+  
+        text-shadow: 5px 5px 2px #F4545C, 0px 0px 0px #c20e2c;
+      }
+  
+      & .TimerButton {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+  
+        color: rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 2px #F86D6B, 0px 0px 0px #c20e2c;
+  
+        width: 169px;
+        height: 59px;
+  
+  
+        border-radius: 10px;
+        border: 0;
+  
+        margin-top: 35px;
+  
+        box-shadow: 2px 4px 4px #00000028, -3px -3px 4px #bfbfbf33;
+  
+        cursor: pointer;
+        &.active {
+          box-shadow: inset 2px 4px 4px #00000028, inset -3px -3px 4px #bfbfbf33;
+          padding-top: 5px;
+        }
+      }
+  
+      & .TimerStats{
+        display: flex;
+        flex-direction: column;
+  
+        justify-content: center;
+        text-align: center;
+  
+        margin: 10px;
+  
+        & .cycle {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+  
+          color: rgba(0, 0, 0, 0.01);
+          text-shadow: 2px 2px 2px #F96756, 0px 0px 0px #c20e2c;
+        }
+  
+        & .allTime {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+  
+          color: rgba(0, 0, 0, 0.01);
+          text-shadow: 2px 2px 2px #FA6B55, 0px 0px 0px #c20e2c;
+        }
+      }
+    }
+    
+
+    
+  }
+}
+
+.glass {
+
+  background: rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+.TaskManager-container {
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+
+  & .header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+
+    font-size: 20px;
+
+    border-bottom: 2px solid #C61B32;
+
+    color: rgba(0, 0, 0, 0.01);
+    text-shadow: 2px 2px 2px #FA6B55, 0px 0px 0px #c20e2c;
+
+    & .refreshIcon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & rect {
+        stroke: #C61B32;
+      }
+
+      & path {
+        fill: #C61B32;
+      }
+      
+    }
+
+    & .addBtn-container{
+      display: flex;
+      justify-content: end;
+
+      & .addBtn {
+        width: 20px;
+        height: 20px;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+        border: solid 2px #C61B32;
+        border-radius: 2px;
+
+        cursor: pointer;
+
+        &:hover {
+          border: solid 2px #db4559;
+
+          & span {
+            background: #db4559;
+          }
+        }
+
+        &:active {
+          border: solid 2px #C61B32;
+
+          & span {
+            background: #C61B32;
+          }
+        }
+
+        & span {
+          position: absolute;
+          content: "";
+
+          background: #C61B32;
+  
+          width: 12px;
+          height: 2px;
+  
+          border-radius: 2px;
+
+          top: 7px;
+
+          transition: transform 0.2s ease;
+        }
+
+        & .line1 {
+          transform: rotate(90deg);
+        }
+
+        
+      }
+
+      & .addBtn.active {
+        & .line1 {
+          transform: rotate(45deg);
+        }
+
+        & .line2 {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  & .TaskMenu-container{
+    display: none;
+  }
+
+  & .TaskMenu-container.active{
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      width: 275px;
+      height: 144px;
+
+      border-radius: 20px;
+
+      z-index: 6;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+
+      & input {
+        border: 0;
+        background-color: transparent;
+        color: #AD3C24;
+        margin: 15px 10px 10px 10px;
+        font-size: 16px;
+        width: 245px;
+        outline: none;
+        
+        &::placeholder{
+          color: #AD3C24;
+          opacity: 0.5;
+        }
+      }
+
+      & p {
+        color: #AD3C24;
+        margin-left: 10px;
+        font-size: 14px;
+      }
+
+      & .Counter-container{
+        display: flex;
+
+        & .Counter {
+          width: 42px;
+          height: 24px;
+          background-color: #F69072;
+          color: #AD3C24;
+          border: 0;
+          line-height: 13px;
+          font-size: 13px;
+          border-radius: 6px;
+          padding: 0 3px;
+
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+          margin: 2px 5px 2px 10px;
+        }
+  
+        & .PlusBtn, .MinusBtn{
+          display: flex;
+          border: 0;
+          width: 24px;
+          height: 24px;
+          align-content: center;
+          justify-content: center;
+          margin: 2px 1px;
+          border-radius: 6px;
+
+          cursor: pointer;
+
+          & path {
+            stroke: #AD3C24;
+            fill: #AD3C24;
+          }
+        }
+
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        position: absolute;
+        bottom: -3px;
+        left: -3px;
+        width: 102%;
+        height: 40px;
+        font-size: 13px;
+
+        align-items: center;
+
+        padding: 0 2px;
+
+        border-radius: 0 0 20px 20px;
+        color: #AD3C24;
+
+        & .Btn {
+          cursor: pointer;
+          user-select: none;
+        }
+
+        & .DeleteBtn{
+          display: inline-block;
+          padding-left: 25px;
+        }
+
+        & .SaveBtn{
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          font-size: 13px;
+
+          width: 70px;
+          height: 32px;
+
+          border: 3px solid rgba(255, 255, 255, 0.2);
+          margin: 0;
+
+        }
+      }
+
+    }
+
+  & .content {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+
+    width: 100%;
+    height: 140px;
+
+    
+
+    & .Task-container {
+      display: grid;
+      width: 248px;
+      margin: 10px;
+
+      cursor: pointer;
+
+      background: rgba(255, 255, 255, 0.1);
+
+      
+
+      border-radius: 10px;
+
+      grid-template-columns: 4fr 1fr;
+      grid-template-rows: 1fr;
+
+      user-select: none;
+
+      padding: 7px;
+
+      & .TaskInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        & .TaskText {
+          color: rgba(0, 0, 0, 0.01);
+          width: 150px;
+          overflow-wrap: break-word;
+          text-shadow: 2px 2px 2px #FB8364, 0px 0px 0px #c20e2c;
+        }
+      }
+
+      & .progressText-container {
+        border-left: solid 2px#C61B32;
+        height: 100%;
+        width: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        padding: 7px;
+        padding-top: 9px;
+
+        & .progressText {
+          color: rgba(0, 0, 0, 0.01);
+          text-shadow: 2px 2px 2px #FB8364, 0px 0px 0px #c20e2c;
+        }
+      }
+    }
+
+    & .Task-container.done{
+      border: 3px solid rgba(200, 200, 200, 0.2);
+      background: rgba(200, 200, 200, 0.2);
+
+      & .TaskText {
+        text-decoration: 1px line-through;
+      }
+
+      & .doneIcon {
+
+        & .line1 {
+          top: 7px;
+          left: 4px;
+        }
+        & .line2 {
+          top: 7px;
+          left: 4px;
+          width: 8px;
+        }
+      }
+    }
+
+    & .AddTask-container {
+      display: flex;
+      width: 90%;
+      height: 50px;
+
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+
+      border: 3px dashed rgba(255, 255, 255, 0.2) ;
+      border-radius: 10px;
+
+      color: rgba(0, 0, 0, 0.01);
+      text-shadow: 2px 2px 2px #FB8364, 0px 0px 0px #c20e2c;
+
+      user-select: none;
+
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        text-shadow: 2px 2px 2px #FC9075, 0px 0px 0px #c20e2c;
+      }
+
+      &:active {
+        background: rgba(255, 255, 255, 0.15);
+        text-shadow: 2px 2px 2px #FC9075, 0px 0px 0px #c20e2c;
+      }
+      }
+    }
+  }
+
+.doneIcon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  border: solid 2px #C61B32;
+  border-radius: 20px;
+
+  margin-right: 10px;
+  margin-left: 5px;
+
+  & .line1 {
+    position: absolute;
+
+    width: 8px;
+    height: 2px;
+
+    background-color: #C61B32;
+    border-radius: 2px;
+
+    top: 7px;
+    left: 5.5px;
+
+    transform: rotate(-45deg);
+  }
+  & .line2 {
+    position: absolute;
+
+    width: 5px;
+    height: 2px;
+
+    background-color: #C61B32;
+    border-radius: 2px;
+
+    top: 8.5px;
+    right: 8px;
+
+    transform: rotate(45deg);
+  }
+}
+
+.addBtn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  border: solid 2px #C61B32;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  margin-right: 10px;
+
+  & span {
+    position: absolute;
+    background-color: #C61B32;
+
+    width: 10px;
+    height: 2px;
+
+    border-radius: 2px;
+
+    top: 7px;
+  }
+
+  & .line1 {
+    transform: rotate(90deg);
+  }
+}
+
+.Menu-container {
+  display: none;
+}
+
+.Menu-container.active{
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 80vh;
+  z-index: 9;
+
+  & .Menu {
+    position: absolute;
+    top: -3px;
+    left: 207px;
+    width: 193px;
+    z-index: 10;
+    transition: opacity 0.2s ease left 0.2s ease;
+
+    border-radius: 15px 0 0 15px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    padding: 15px;
+    padding-right: 0;
+
+    & .Menu-doneIcon{
+      position: relative;
+      right: 1px;
+      margin-right: 7px;
+    }
+
+    & .Menu-doneIcon *{
+      stroke: #AC1025;
+    }
+
+    & .Menu-delIcon *{
+      stroke: #AC1025;
+    }
+
+    & .Menu-delIcon {
+      position: relative;
+      right: 1px;
+      margin-right: 6px;
+    }
+
+    & .choice{
+      font-size: 16px;
+      display: flex;
+      color: rgba(0, 0, 0, 0.01);
+      text-shadow: 2px 2px 2px #ED4D64, 0px 0px 0px #c20e2c;
+      border-radius: 5px;
+
+      padding: 5px;
+      align-content: center;
+
+      user-select: none;
+      &:hover{
+        background: rgba(255, 255, 255, 0.2);
+        text-shadow: 2px 2px 2px #F47A8C, 0px 0px 0px #c20e2c;
+      }
+
+      &:active{
+        background: rgba(0, 0, 0, 0.1);
+        text-shadow: 2px 2px 2px #D74D63, 0px 0px 0px #c20e2c;
+      }
+    }
+
+    & .Menu-Settings{
+      padding-bottom: 2px;
+
+      & .Settings-svg *{
+        stroke: #AF0924;
+      }
+      & .Settings-svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.content-settings{
+  display: none;
+}
+
+.content-settings.active {
+  display: block;
+  & .Settings-container {
+
+    display: flex;
+    flex-direction: column;
+  
+    justify-items: center;
+    align-items: center;
+  
+    padding: 30px;
+  
+    & h1 {
+      font-size: 25px;
+      color: rgba(0, 0, 0, 0.1);
+      text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #c20e2c;
+  
+      margin-bottom: 20px;
+    }
+  
+  
+    & .Settings-form{
+      width: 100%;
+
+      & footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: end;
+        align-items: center;
+
+        & .CancelBtn{
+          font-size: 15px;
+          color: #c20e2c;
+          display: inline-block;
+          user-select: none;
+          cursor: pointer;
+        }
+
+        & .SaveBtn{
+          color: #c20e2c;
+          font-size: 15px;
+          padding: 5px 20px;
+          margin: 0 0 0 10px;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+      }
+  
+      & h2 {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.1);
+        text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #dc3c57;
+        margin-bottom: 15px;
+      }
+  
+      & h3 {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.1);
+        text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #c20e2c;
+        margin-bottom: 10px;
+      }
+  
+      & label:not(.toggle-checkbox){
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.1);
+        text-shadow: 5px 5px 4px #F66650, 0px 0px 0px #c20e2c;
+        margin-bottom: 10px;
+      }
+  
+      & .LongBreak-interval{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        margin: 10px 0;
+        border-bottom: 2px solid #c20e2c;
+        align-items: center;
+        padding-bottom: 10px;
+  
+        & .LongBreak-interval-label{
+          position: relative;
+          top: 4px
+        }
+        
+  
+        & .counter-individual{
+          justify-self: end;
+        }
+      }
+  
+      & .checkbox-wrapper{
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+  
+        & .toggle-checkbox{
+          justify-self: end;
+        }
+  
+  
+        & .Settings-checkbox{
+          display: none;
+        }
+  
+        & .Settings-checkbox:checked + .toggle-container{
+          background-color: #F1314F;
+        }
+  
+        & .Settings-checkbox:checked + .toggle-container .toggle-slider {
+          transform: translateX(25px);
+        }
+  
+        & .toggle-container{
+          background: rgba(255, 255, 255, 0.3);
+          position: relative;
+          width: 50px;
+          height: 25px;
+          border-radius: 25px;
+          transition: background-color 0.3s ease;
+          cursor: pointer;
+          border: 0;
+  
+          & .toggle-slider{
+            background: rgba(255, 255, 255, 0.3);
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 21px;
+            height: 21px;
+            border: 0;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+          }
+  
+  
+        }
+  
+  
+      }
+  
+      & .counter{
+        display: flex;
+  
+        justify-items: center;
+        align-items: center;
+        border: 0;
+  
+        width: 60px;
+        height: 30px;
+        border-radius: 6px;
+        padding: 0 3px;
+  
+  
+        & input{
+          outline: none;
+          border: 0;
+          width: 42px;
+          height: 24px;
+          background-color: #ffffff00;
+          color: #AD3C24;
+          border: 0;
+          line-height: 13px;
+          font-size: 13px;
+          border-radius: 6px;
+          padding: 0 3px;
+        }
+  
+      
+  
+  
+        
+  
+      }
+  
+  
+  
+      & .Settings-timer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+  
+        margin-bottom: 20px;
+  
+        
+  
+        & .Settings-time{
+          display: flex;
+          flex-direction: column;
+  
+          align-items: center;
+          justify-items: center;
+          
+          & label {
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.1);
+            text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #dc3c57;
+            margin: 5px;
+          }
+        }
+  
+        
+        
+      }
+    }
+  }
+  
+  
+  
+}

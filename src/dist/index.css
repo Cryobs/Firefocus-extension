@@ -1,0 +1,1097 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
+}
+.App.ShortBreak {
+  background: linear-gradient(180deg, #317AE1 11%, #BC3FE1 100%);
+}
+.App.ShortBreak .Menu-container .Menu .Menu-doneIcon * {
+  stroke: #0547A4;
+}
+.App.ShortBreak .Menu-container .Menu .Menu-delIcon * {
+  stroke: #0547A4;
+}
+.App.ShortBreak .Menu-container .Menu .choice {
+  text-shadow: 5px 5px 4px #4183E0, 0px 0px 0px #0547A4;
+}
+.App.ShortBreak .Menu-container .Menu .choice:hover {
+  text-shadow: 5px 5px 4px #6498e1, 0px 0px 0px #0547A4;
+}
+.App.ShortBreak .Menu-container .Menu .choice:active {
+  text-shadow: 5px 5px 4px #4183E0, 0px 0px 0px #0547A4;
+}
+.App.ShortBreak .Menu-container .Menu .Menu-Settings .Settings-svg * {
+  stroke: #0547A4;
+}
+.App.ShortBreak .Header .Ext-name {
+  text-shadow: 5px 5px 4px #4183E0, 0px 0px 0px #0547A4;
+}
+.App.ShortBreak .Header .MenuBtn-container .MenuBtn span {
+  background-color: #4183E0;
+  box-shadow: inset 2px 2px 2px #0547A4;
+}
+.App.ShortBreak .Header .MenuBtn-container .MenuBtn.active .MenuBtn-line1 {
+  box-shadow: inset 0 2px 2px #0547A4;
+}
+.App.ShortBreak .Header .MenuBtn-container .MenuBtn.active .MenuBtn-line3 {
+  box-shadow: inset 2px 0 2px #0547A4;
+}
+.App.ShortBreak .ContentArea .content .content-default .PeriodTimer {
+  text-shadow: 5px 5px 4px #517CE0, 0px 0px 0px #0F3EA0;
+}
+.App.ShortBreak .ContentArea .content .content-default .Timer {
+  text-shadow: 5px 5px 2px #5A77DF, 0px 0px 0px #1A3AA1;
+}
+.App.ShortBreak .ContentArea .content .content-default .TimerButton {
+  text-shadow: 2px 2px 2px #7F76DF, 0px 0px 0px #251E86;
+}
+.App.ShortBreak .ContentArea .content .content-default .TimerStats .cycle {
+  text-shadow: 2px 2px 2px #8068E0, 0px 0px 0px #402AA1;
+}
+.App.ShortBreak .ContentArea .content .content-default .TimerStats .allTime {
+  text-shadow: 2px 2px 2px #8665E0, 0px 0px 0px #4527A1;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header {
+  border-bottom: 2px solid #4527A1;
+  text-shadow: 2px 2px 2px #8D63E0, 0px 0px 0px #2B0380;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header .refreshIcon-container path {
+  fill: #350994;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn {
+  border: solid 2px #350994;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:hover {
+  border: solid 2px #6c3ed1;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:hover span {
+  background: #6c3ed1;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:active {
+  border: solid 2px #350994;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:active span {
+  background: #350994;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn span {
+  background: #350994;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container {
+  color: #7343b2;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container input {
+  color: #7343b2;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container input::placeholder {
+  color: #7343b2;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container p {
+  color: #7343b2;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container .Counter {
+  background-color: #A477D7;
+  color: #7343b2;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container path {
+  fill: #5B3099;
+  stroke: #5B3099;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container .PlusBtn {
+  background-color: #A477D7;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container .MinusBtn {
+  background-color: #A477D7;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container footer {
+  color: #7343b2;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .TaskText {
+  text-shadow: 2px 2px 2px #9E6ADF, 0px 0px 0px #59269B;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .doneIcon {
+  border: solid 2px #58259A;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .doneIcon span {
+  background-color: #58259A;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .progressText-container {
+  border-left: solid 2px #58259A;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .progressText-container .progressText {
+  text-shadow: 2px 2px 2px #9E6ADF, 0px 0px 0px #5D2A9F;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container {
+  text-shadow: 2px 2px 2px #AC65E0, 0px 0px 0px #6A259F;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container:hover {
+  text-shadow: 2px 2px 2px #b67ae0, s 0px 0px 0px #6A259F;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container:active {
+  text-shadow: 2px 2px 2px #AC65E0, 0px 0px 0px #6A259F;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container .addBtn {
+  border: solid 2px #6A259F;
+}
+.App.ShortBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container .addBtn span {
+  background-color: #6A259F;
+}
+.App.ShortBreak .ContentArea .content .Settings-container h1 {
+  text-shadow: 2px 2px 2px #5579DF, 0px 0px 0px #133BA0;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form h2 {
+  text-shadow: 2px 2px 2px #6076E0, 0px 0px 0px #3750BA;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form h3 {
+  text-shadow: 2px 2px 2px #6A72E0, 0px 0px 0px #071380;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form label:not(.toggle-checkbox) {
+  text-shadow: 2px 2px 2px #7070E0, 0px 0px 0px #3C40AF;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form .Settings-checkbox:checked + .toggle-container {
+  background-color: #BB40E0;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form .LongBreak-interval {
+  border-bottom: 2px solid #4A0F91;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form .counter input {
+  color: #4038A0;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form footer .CancelBtn {
+  color: #4038A0;
+}
+.App.ShortBreak .ContentArea .content .Settings-container .Settings-form footer .SaveBtn {
+  color: #4038A0;
+}
+.App.LongBreak {
+  background: linear-gradient(180deg, #2E164F 11%, #7F47D6 100%);
+}
+.App.LongBreak .glass {
+  background: rgba(200, 200, 200, 0.1);
+  border: 3px solid rgba(200, 200, 200, 0.2);
+}
+.App.LongBreak .Menu-container .Menu .Menu-doneIcon * {
+  stroke: #00001C;
+}
+.App.LongBreak .Menu-container .Menu .Menu-delIcon * {
+  stroke: #00001C;
+}
+.App.LongBreak .Menu-container .Menu .choice {
+  text-shadow: 5px 5px 4px #4E386C, 0px 0px 0px #00001C;
+}
+.App.LongBreak .Menu-container .Menu .choice:hover {
+  text-shadow: 5px 5px 4px #4E386C, 0px 0px 0px #00001C;
+}
+.App.LongBreak .Menu-container .Menu .choice:active {
+  text-shadow: 5px 5px 4px #4E386C, 0px 0px 0px #00001C;
+}
+.App.LongBreak .Menu-container .Menu .Menu-Settings .Settings-svg * {
+  stroke: #00001C;
+}
+.App.LongBreak .Header .Ext-name {
+  text-shadow: 5px 5px 4px #3E295C, 0px 0px 0px #00001C;
+}
+.App.LongBreak .Header .MenuBtn-container .MenuBtn span {
+  background-color: #000014;
+  box-shadow: inset 2px 2px 2px #170235;
+}
+.App.LongBreak .Header .MenuBtn-container .MenuBtn.active .MenuBtn-line1 {
+  box-shadow: inset 0 2px 2px #170235;
+}
+.App.LongBreak .Header .MenuBtn-container .MenuBtn.active .MenuBtn-line3 {
+  box-shadow: inset 2px 0 2px #170235;
+}
+.App.LongBreak .ContentArea .content .content-default .PeriodTimer {
+  text-shadow: 5px 5px 4px #462D69, 0px 0px 0px #050027;
+}
+.App.LongBreak .ContentArea .content .content-default .Timer {
+  text-shadow: 5px 5px 2px #51347A, 0px 0px 0px #0A0030;
+}
+.App.LongBreak .ContentArea .content .content-default .TimerButton {
+  text-shadow: 2px 2px 2px #684A96, 0px 0px 0px #0C0039;
+}
+.App.LongBreak .ContentArea .content .content-default .TimerStats .cycle {
+  text-shadow: 2px 2px 2px #633E9A, 0px 0px 0px #240059;
+}
+.App.LongBreak .ContentArea .content .content-default .TimerStats .allTime {
+  text-shadow: 2px 2px 2px #66409E, 0px 0px 0px #25005C;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header {
+  border-bottom: 2px solid #090044;
+  text-shadow: 2px 2px 2px #6B43A5, 0px 0px 0px #090044;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header .refreshIcon-container path {
+  fill: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn {
+  border: solid 2px #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:hover {
+  border: solid 2px #1c0b4e;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:hover span {
+  background: #1c0b4e;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:active {
+  border: solid 2px #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn:active span {
+  background: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .header .addBtn span {
+  background: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container {
+  color: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container input {
+  color: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container input::placeholder {
+  color: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container p {
+  color: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container .Counter {
+  background-color: #8D6DBD;
+  color: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container path {
+  fill: #14004E;
+  stroke: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container .PlusBtn {
+  background-color: #8D6DBD;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container .Counter-container .MinusBtn {
+  background-color: #8D6DBD;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskMenu-container footer {
+  color: #14004E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .TaskText {
+  text-shadow: 2px 2px 2px #7A55B3, 0px 0px 0px #3A1573;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .doneIcon {
+  border: solid 2px #3A1573;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .doneIcon span {
+  background-color: #3A1573;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .progressText-container {
+  border-left: solid 2px #3A1573;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .progressText-container .progressText {
+  text-shadow: 2px 2px 2px #7A55B3, 0px 0px 0px #391472;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container {
+  text-shadow: 2px 2px 2px #8059BF, 0px 0px 0px #41197F;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container:hover {
+  text-shadow: 2px 2px 2px #8b6dbd, 0px 0px 0px #492580;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container:active {
+  text-shadow: 2px 2px 2px #8059BF, 0px 0px 0px #41197F;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container .addBtn {
+  border: solid 2px #41197E;
+}
+.App.LongBreak .ContentArea .content .content-default .TaskManager-container .AddTask-container .addBtn span {
+  background-color: #41197E;
+}
+.App.LongBreak .ContentArea .content .Settings-container h1 {
+  text-shadow: 2px 2px 2px #4A3070, 0px 0px 0px #08002C;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form h2 {
+  text-shadow: 2px 2px 2px #503379, 0px 0px 0px #280C50;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form h3 {
+  text-shadow: 2px 2px 2px #543681, 0px 0px 0px #0A0036;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form label:not(.toggle-checkbox) {
+  text-shadow: 2px 2px 2px #593887, 0px 0px 0px #270756;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form .Settings-checkbox:checked + .toggle-container {
+  background-color: #7D46D1;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form .LongBreak-interval {
+  border-bottom: 2px solid #210060;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form .counter input {
+  color: #38146E;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form footer .CancelBtn {
+  color: #38146E;
+}
+.App.LongBreak .ContentArea .content .Settings-container .Settings-form footer .SaveBtn {
+  color: #38146E;
+}
+.App {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(180deg, #F12E50 11%, #FE7738 100%);
+}
+.Header {
+  position: relative;
+  box-sizing: border-box;
+  width: 400px;
+  height: 66px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 20px;
+}
+.Header .Ext-name {
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  user-select: none;
+  mix-blend-mode: plus-darker;
+  color: rgba(0, 0, 0, 0.1);
+  text-shadow: 5px 5px 4px #F12E50, 0px 0px 0px #c20e2c;
+}
+.Header .MenuBtn-container {
+  display: flex;
+  justify-content: end;
+}
+.Header .MenuBtn-container .MenuBtn {
+  position: relative;
+  bottom: 2px;
+  height: 24px;
+  width: 24px;
+  z-index: 10;
+  cursor: pointer;
+}
+.Header .MenuBtn-container .MenuBtn span {
+  position: absolute;
+  content: "";
+  background-color: #F24362;
+  width: 24px;
+  height: 4px;
+  border-radius: 5px;
+  right: 0px;
+  box-shadow: inset 2px 2px 2px #8a0a1f;
+  transition: opacity 0.2s ease, top 0.2s ease, rotate 0.2s ease, box-shadow 0.2s ease;
+}
+.Header .MenuBtn-container .MenuBtn .MenuBtn-line1 {
+  top: 20%;
+}
+.Header .MenuBtn-container .MenuBtn .MenuBtn-line2 {
+  top: 50%;
+}
+.Header .MenuBtn-container .MenuBtn .MenuBtn-line3 {
+  top: 80%;
+}
+.Header .MenuBtn-container .MenuBtn.active .MenuBtn-line1 {
+  top: 50%;
+  rotate: -45deg;
+  box-shadow: inset 0 2px 2px #8a0a1f;
+  z-index: 10;
+}
+.Header .MenuBtn-container .MenuBtn.active .MenuBtn-line2 {
+  opacity: 0;
+}
+.Header .MenuBtn-container .MenuBtn.active .MenuBtn-line3 {
+  top: 50%;
+  rotate: 45deg;
+  box-shadow: inset 2px 0 2px #8a0a1f;
+  z-index: 11;
+}
+.ContentArea {
+  display: grid;
+  width: 100%;
+  height: 534px;
+  justify-items: center;
+  padding: 25px 40px;
+}
+.ContentArea .content {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.ContentArea .content .content-default {
+  display: none;
+}
+.ContentArea .content .content-default.active {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ContentArea .content .content-default.active .PeriodTimer {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.1);
+  user-select: none;
+  text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #c20e2c;
+}
+.ContentArea .content .content-default.active .Timer {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 85px;
+  color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 229.383px;
+  height: 85px;
+  user-select: none;
+  text-shadow: 5px 5px 2px #F4545C, 0px 0px 0px #c20e2c;
+}
+.ContentArea .content .content-default.active .TimerButton {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 2px #F86D6B, 0px 0px 0px #c20e2c;
+  width: 169px;
+  height: 59px;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 35px;
+  box-shadow: 2px 4px 4px #00000028, -3px -3px 4px #bfbfbf33;
+  cursor: pointer;
+}
+.ContentArea .content .content-default.active .TimerButton.active {
+  box-shadow: inset 2px 4px 4px #00000028, inset -3px -3px 4px #bfbfbf33;
+  padding-top: 5px;
+}
+.ContentArea .content .content-default.active .TimerStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.ContentArea .content .content-default.active .TimerStats .cycle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.01);
+  text-shadow: 2px 2px 2px #F96756, 0px 0px 0px #c20e2c;
+}
+.ContentArea .content .content-default.active .TimerStats .allTime {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.01);
+  text-shadow: 2px 2px 2px #FA6B55, 0px 0px 0px #c20e2c;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+.TaskManager-container {
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+}
+.TaskManager-container .header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 2px solid #C61B32;
+  color: rgba(0, 0, 0, 0.01);
+  text-shadow: 2px 2px 2px #FA6B55, 0px 0px 0px #c20e2c;
+}
+.TaskManager-container .header .refreshIcon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TaskManager-container .header .refreshIcon-container rect {
+  stroke: #C61B32;
+}
+.TaskManager-container .header .refreshIcon-container path {
+  fill: #C61B32;
+}
+.TaskManager-container .header .addBtn-container {
+  display: flex;
+  justify-content: end;
+}
+.TaskManager-container .header .addBtn-container .addBtn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: solid 2px #C61B32;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.TaskManager-container .header .addBtn-container .addBtn:hover {
+  border: solid 2px #db4559;
+}
+.TaskManager-container .header .addBtn-container .addBtn:hover span {
+  background: #db4559;
+}
+.TaskManager-container .header .addBtn-container .addBtn:active {
+  border: solid 2px #C61B32;
+}
+.TaskManager-container .header .addBtn-container .addBtn:active span {
+  background: #C61B32;
+}
+.TaskManager-container .header .addBtn-container .addBtn span {
+  position: absolute;
+  content: "";
+  background: #C61B32;
+  width: 12px;
+  height: 2px;
+  border-radius: 2px;
+  top: 7px;
+  transition: transform 0.2s ease;
+}
+.TaskManager-container .header .addBtn-container .addBtn .line1 {
+  transform: rotate(90deg);
+}
+.TaskManager-container .header .addBtn-container .addBtn.active .line1 {
+  transform: rotate(45deg);
+}
+.TaskManager-container .header .addBtn-container .addBtn.active .line2 {
+  transform: rotate(-45deg);
+}
+.TaskManager-container .TaskMenu-container {
+  display: none;
+}
+.TaskManager-container .TaskMenu-container.active {
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  width: 275px;
+  height: 144px;
+  border-radius: 20px;
+  z-index: 6;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.TaskManager-container .TaskMenu-container.active input {
+  border: 0;
+  background-color: transparent;
+  color: #AD3C24;
+  margin: 15px 10px 10px 10px;
+  font-size: 16px;
+  width: 245px;
+  outline: none;
+}
+.TaskManager-container .TaskMenu-container.active input::placeholder {
+  color: #AD3C24;
+  opacity: 0.5;
+}
+.TaskManager-container .TaskMenu-container.active p {
+  color: #AD3C24;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.TaskManager-container .TaskMenu-container.active .Counter-container {
+  display: flex;
+}
+.TaskManager-container .TaskMenu-container.active .Counter-container .Counter {
+  width: 42px;
+  height: 24px;
+  background-color: #F69072;
+  color: #AD3C24;
+  border: 0;
+  line-height: 13px;
+  font-size: 13px;
+  border-radius: 6px;
+  padding: 0 3px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin: 2px 5px 2px 10px;
+}
+.TaskManager-container .TaskMenu-container.active .Counter-container .PlusBtn,
+.TaskManager-container .TaskMenu-container.active .Counter-container .MinusBtn {
+  display: flex;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  align-content: center;
+  justify-content: center;
+  margin: 2px 1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.TaskManager-container .TaskMenu-container.active .Counter-container .PlusBtn path,
+.TaskManager-container .TaskMenu-container.active .Counter-container .MinusBtn path {
+  stroke: #AD3C24;
+  fill: #AD3C24;
+}
+.TaskManager-container .TaskMenu-container.active footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  width: 102%;
+  height: 40px;
+  font-size: 13px;
+  align-items: center;
+  padding: 0 2px;
+  border-radius: 0 0 20px 20px;
+  color: #AD3C24;
+}
+.TaskManager-container .TaskMenu-container.active footer .Btn {
+  cursor: pointer;
+  user-select: none;
+}
+.TaskManager-container .TaskMenu-container.active footer .DeleteBtn {
+  display: inline-block;
+  padding-left: 25px;
+}
+.TaskManager-container .TaskMenu-container.active footer .SaveBtn {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  width: 70px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+.TaskManager-container .content {
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+  width: 100%;
+  height: 140px;
+}
+.TaskManager-container .content .Task-container {
+  display: grid;
+  width: 248px;
+  margin: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+  user-select: none;
+  padding: 7px;
+}
+.TaskManager-container .content .Task-container .TaskInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TaskManager-container .content .Task-container .TaskInfo .TaskText {
+  color: rgba(0, 0, 0, 0.01);
+  width: 150px;
+  overflow-wrap: break-word;
+  text-shadow: 2px 2px 2px #FB8364, 0px 0px 0px #c20e2c;
+}
+.TaskManager-container .content .Task-container .progressText-container {
+  border-left: solid 2px #C61B32;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 7px;
+  padding-top: 9px;
+}
+.TaskManager-container .content .Task-container .progressText-container .progressText {
+  color: rgba(0, 0, 0, 0.01);
+  text-shadow: 2px 2px 2px #FB8364, 0px 0px 0px #c20e2c;
+}
+.TaskManager-container .content .Task-container.done {
+  border: 3px solid rgba(200, 200, 200, 0.2);
+  background: rgba(200, 200, 200, 0.2);
+}
+.TaskManager-container .content .Task-container.done .TaskText {
+  text-decoration: 1px line-through;
+}
+.TaskManager-container .content .Task-container.done .doneIcon .line1 {
+  top: 7px;
+  left: 4px;
+}
+.TaskManager-container .content .Task-container.done .doneIcon .line2 {
+  top: 7px;
+  left: 4px;
+  width: 8px;
+}
+.TaskManager-container .content .AddTask-container {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 3px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.01);
+  text-shadow: 2px 2px 2px #FB8364, 0px 0px 0px #c20e2c;
+  user-select: none;
+  cursor: pointer;
+}
+.TaskManager-container .content .AddTask-container:hover {
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: 2px 2px 2px #FC9075, 0px 0px 0px #c20e2c;
+}
+.TaskManager-container .content .AddTask-container:active {
+  background: rgba(255, 255, 255, 0.15);
+  text-shadow: 2px 2px 2px #FC9075, 0px 0px 0px #c20e2c;
+}
+.doneIcon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: solid 2px #C61B32;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.doneIcon .line1 {
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #C61B32;
+  border-radius: 2px;
+  top: 7px;
+  left: 5.5px;
+  transform: rotate(-45deg);
+}
+.doneIcon .line2 {
+  position: absolute;
+  width: 5px;
+  height: 2px;
+  background-color: #C61B32;
+  border-radius: 2px;
+  top: 8.5px;
+  right: 8px;
+  transform: rotate(45deg);
+}
+.addBtn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: solid 2px #C61B32;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.addBtn span {
+  position: absolute;
+  background-color: #C61B32;
+  width: 10px;
+  height: 2px;
+  border-radius: 2px;
+  top: 7px;
+}
+.addBtn .line1 {
+  transform: rotate(90deg);
+}
+.Menu-container {
+  display: none;
+}
+.Menu-container.active {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 80vh;
+  z-index: 9;
+}
+.Menu-container.active .Menu {
+  position: absolute;
+  top: -3px;
+  left: 207px;
+  width: 193px;
+  z-index: 10;
+  transition: opacity 0.2s ease left 0.2s ease;
+  border-radius: 15px 0 0 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px;
+  padding-right: 0;
+}
+.Menu-container.active .Menu .Menu-doneIcon {
+  position: relative;
+  right: 1px;
+  margin-right: 7px;
+}
+.Menu-container.active .Menu .Menu-doneIcon * {
+  stroke: #AC1025;
+}
+.Menu-container.active .Menu .Menu-delIcon * {
+  stroke: #AC1025;
+}
+.Menu-container.active .Menu .Menu-delIcon {
+  position: relative;
+  right: 1px;
+  margin-right: 6px;
+}
+.Menu-container.active .Menu .choice {
+  font-size: 16px;
+  display: flex;
+  color: rgba(0, 0, 0, 0.01);
+  text-shadow: 2px 2px 2px #ED4D64, 0px 0px 0px #c20e2c;
+  border-radius: 5px;
+  padding: 5px;
+  align-content: center;
+  user-select: none;
+}
+.Menu-container.active .Menu .choice:hover {
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: 2px 2px 2px #F47A8C, 0px 0px 0px #c20e2c;
+}
+.Menu-container.active .Menu .choice:active {
+  background: rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 2px #D74D63, 0px 0px 0px #c20e2c;
+}
+.Menu-container.active .Menu .Menu-Settings {
+  padding-bottom: 2px;
+}
+.Menu-container.active .Menu .Menu-Settings .Settings-svg * {
+  stroke: #AF0924;
+}
+.Menu-container.active .Menu .Menu-Settings .Settings-svg {
+  margin-right: 10px;
+}
+.content-settings {
+  display: none;
+}
+.content-settings.active {
+  display: block;
+}
+.content-settings.active .Settings-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 30px;
+}
+.content-settings.active .Settings-container h1 {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.1);
+  text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #c20e2c;
+  margin-bottom: 20px;
+}
+.content-settings.active .Settings-container .Settings-form {
+  width: 100%;
+}
+.content-settings.active .Settings-container .Settings-form footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+.content-settings.active .Settings-container .Settings-form footer .CancelBtn {
+  font-size: 15px;
+  color: #c20e2c;
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+}
+.content-settings.active .Settings-container .Settings-form footer .SaveBtn {
+  color: #c20e2c;
+  font-size: 15px;
+  padding: 5px 20px;
+  margin: 0 0 0 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.content-settings.active .Settings-container .Settings-form h2 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.1);
+  text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #dc3c57;
+  margin-bottom: 15px;
+}
+.content-settings.active .Settings-container .Settings-form h3 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.1);
+  text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #c20e2c;
+  margin-bottom: 10px;
+}
+.content-settings.active .Settings-container .Settings-form label:not(.toggle-checkbox) {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.1);
+  text-shadow: 5px 5px 4px #F66650, 0px 0px 0px #c20e2c;
+  margin-bottom: 10px;
+}
+.content-settings.active .Settings-container .Settings-form .LongBreak-interval {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  margin: 10px 0;
+  border-bottom: 2px solid #c20e2c;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.content-settings.active .Settings-container .Settings-form .LongBreak-interval .LongBreak-interval-label {
+  position: relative;
+  top: 4px;
+}
+.content-settings.active .Settings-container .Settings-form .LongBreak-interval .counter-individual {
+  justify-self: end;
+}
+.content-settings.active .Settings-container .Settings-form .checkbox-wrapper {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+}
+.content-settings.active .Settings-container .Settings-form .checkbox-wrapper .toggle-checkbox {
+  justify-self: end;
+}
+.content-settings.active .Settings-container .Settings-form .checkbox-wrapper .Settings-checkbox {
+  display: none;
+}
+.content-settings.active .Settings-container .Settings-form .checkbox-wrapper .Settings-checkbox:checked + .toggle-container {
+  background-color: #F1314F;
+}
+.content-settings.active .Settings-container .Settings-form .checkbox-wrapper .Settings-checkbox:checked + .toggle-container .toggle-slider {
+  transform: translateX(25px);
+}
+.content-settings.active .Settings-container .Settings-form .checkbox-wrapper .toggle-container {
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: 0;
+}
+.content-settings.active .Settings-container .Settings-form .checkbox-wrapper .toggle-container .toggle-slider {
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.content-settings.active .Settings-container .Settings-form .counter {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 0;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  padding: 0 3px;
+}
+.content-settings.active .Settings-container .Settings-form .counter input {
+  outline: none;
+  width: 42px;
+  height: 24px;
+  background-color: #ffffff00;
+  color: #AD3C24;
+  border: 0;
+  line-height: 13px;
+  font-size: 13px;
+  border-radius: 6px;
+  padding: 0 3px;
+}
+.content-settings.active .Settings-container .Settings-form .Settings-timer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 20px;
+}
+.content-settings.active .Settings-container .Settings-form .Settings-timer .Settings-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.content-settings.active .Settings-container .Settings-form .Settings-timer .Settings-time label {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.1);
+  text-shadow: 5px 5px 4px #F44B5D, 0px 0px 0px #dc3c57;
+  margin: 5px;
+}

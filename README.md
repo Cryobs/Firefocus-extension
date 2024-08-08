@@ -51,7 +51,7 @@ npm run build-extension
 
 For work with less I use [this plugin](https://marketplace.visualstudio.com/items?itemName=Wscats.eno) for VS code
 
-Load the extension in Firefox:
+## Load the extension in Firefox:
 
 1. Open Firefox and navigate to about:debugging#/runtime/this-firefox.
 2. Click on Load Temporary Add-on.

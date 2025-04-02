@@ -38,30 +38,30 @@ class ContentArea extends React.Component{
       let seconds;
 
       seconds = this.state.NumOfCycle * this.state.time;
-       // Проверяем, что входные данные являются неотрицательным числом
+       // Check negative number
       if (typeof seconds !== 'number' || seconds < 0) {
         throw new Error('Invalid input: must be a non-negative number');
       }
 
-      // Определяем количество часов, минут и секунд
+      // get hours, minutes and secs
       const hours = Math.floor(seconds / 3600);
       const minutes = Math.floor((seconds % 3600) / 60);
       const secs = seconds % 60;
 
-      // Создаем массив для хранения частей результата
+      // Create a array for result
       const parts = [];
 
-      // Добавляем часы, если они есть
+      // add hours, if exist
       if (hours > 0) {
         parts.push(`${hours}h`);
       }
 
-      // Добавляем минуты, если они есть
+      // add minutes, if exist
       if (minutes > 0 || hours > 0) { // Добавляем минуты, если есть часы или сами минуты больше 0
         parts.push(`${minutes}m`);
       }
 
-      // Добавляем секунды, если они есть
+      // add secs, if exist
       if (secs > 0 || (hours === 0 && minutes === 0)) { // Добавляем секунды, если нет часов и минут
         parts.push(`${secs}s`);
       }
@@ -70,7 +70,7 @@ class ContentArea extends React.Component{
         return "-";
       }
 
-      // Возвращаем результат, соединенный пробелом
+      // return result with space separator 
       return parts.join(' ');
     }
 

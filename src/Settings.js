@@ -16,14 +16,14 @@ class Settings extends React.Component {
   }
 
   componentDidMount() {
-    // Загружаем конфигурацию при монтировании компонента
+    // Load a configuration
     this.loadConfig();
   }
 
   async loadConfig() {
     try {
       const config = await this.GetConfig();
-      console.log('Полученная конфигурация:', config); // Проверка полученной конфигурации
+      console.log('Received config:', config); // Check configuration
       if (config) {
         config.time = config.time / 60;
         config.shortTime = config.shortTime / 60;
@@ -31,7 +31,7 @@ class Settings extends React.Component {
         this.setState({ config });
       }
     } catch (error) {
-      console.error('Ошибка при получении конфигурации:', error);
+      console.error('Error with receive config:', error);
     }
   }
 
@@ -41,7 +41,7 @@ class Settings extends React.Component {
         if (browser.runtime.lastError) {
           reject(browser.runtime.lastError);
         } else {
-          console.log('Ответ от GetConfig:', response); // Проверка ответа от сообщения
+          console.log('Rresponce from GetConfig:', response); // Check response
           resolve(response);
         }
       });
@@ -52,9 +52,9 @@ class Settings extends React.Component {
     const { name, value, type, checked } = event.target;
     let newValue = value;
 
-    // Ограничиваем ввод значений от 1 до 99 или пустое значение
+    // Limit input lines from 1 to 99 or empty value
     if (type === 'text') {
-      newValue = newValue.replace(/\D/g, ''); // Удаляем все нецифровые символы
+      newValue = newValue.replace(/\D/g, ''); // Remove all non-numeric characters
       if (newValue === '') {
         newValue = '';
       } else if (newValue < 1) {
@@ -87,7 +87,7 @@ class Settings extends React.Component {
     browser.runtime.sendMessage(
       { command: 'SettingsForm', form: formObject },
       () => {
-        console.log('SettingsForm отправлен');
+        console.log('SettingsForm sent');
       }
     );
   };

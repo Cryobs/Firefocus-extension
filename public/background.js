@@ -138,7 +138,7 @@ function checkNewDay() {
         });
       }
 
-      if (Day < today.getDate()) {
+      if (Day !== today.getDate()) {
         return saveData("NumOfCycle", 0), saveData("Day", today.getDate());
       } else {
         return;
